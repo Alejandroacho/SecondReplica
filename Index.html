@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART SEO</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="Elementos/logo.png">
+            <a class="right" href="Index.html">LET'S WORK TOGETHER</a> 
+            <a class="right"href="Index.html">WORK</a> 
+            <a class="right"href="Index.html">UX</a> 
+            <a class="right" href="Index.html">SEO</a>
+        </nav>
+        <br>
+        <hr>
+        <div id="Texto">
+            <h1>
+            THE BEST SEO ANGENCY EVER 
+            </h1>
+            <h2>
+            Your business is always safe in our hands.
+            </h2>
+        </div>
+    </header>
+    <main>
+    <div id="Results">
+        <div class="texto">
+            <p>Driving Revenue through SEO and PPC for Brands & SMEs.</p>
+        </div>
+        <div class="boton">
+            <button type="button">GET YOUR RESULTS</button>  
+        </div>
+    </div>
+    <div id="MasterBox">
+        <img class="IMGSEO" src="Elementos/icon_seo.png">
+        <h2 class="TXTSEO">SEO</h2>
+        <p class="PSEO">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a lacus eu nunc euismod fringilla vitae at sapien. Praesent eu porttitor ante, ut feugiat lorem.</p>
+
+        <img class="IMGWeb" src="Elementos/icon_webdesign.png">
+        <h2 class="TXTWeb">WEB DESIGN</h2>
+        <p class="PWEB">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a lacus eu nunc euismod fringilla vitae at sapien. Praesent eu porttitor ante, curri and code.</p>
+    
+        <img class="IMGPPC" src="Elementos/icon_ppc.png">
+        <h2 class="TXTPPC">PPC</h2>
+        <p class="PPPC">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a lacus eu nunc euismod vitae at sapien. Praesent eu porttitor ante, ut feugiat lorem.</p>
+    </div>
+    <div class="slider">
+        <div class="mySlides">
+            <h2>WHAT OUR CLIENTS ARE SAYING</h2>
+            <hr>
+            <br>
+            <img src="Elementos/quotation.png">
+            <q>I appreciate lorem ipsum dolor sit amet, ei sea euripidis philosophia, pri ullum dicit eu, sit in scripta efficendi. Dicunt inimicus. Lorem ipsum dolor sit amet.</q>
+            <br>
+            <br>
+            <p class="author">- Alejandro A.</p>
+        </div>
+
+        <div class="mySlides">
+            <h2>WHAT OUR CLIENTS ARE SAYING</h2>
+            <hr>
+            <br>
+            <img src="Elementos/quotation.png">
+            <q>I appreciate lorem ipsum dolor sit amet, ei sea euripidis philosophia, pri ullum dicit eu, sit in scripta efficendi. Dicunt inimicus. Lorem ipsum dolor sit amet.</q>
+            <br>
+            <br>
+            <p class="author">- Sebastian H.</p>
+        </div>
+
+        <div class="mySlides">
+            <h2>WHAT OUR CLIENTS ARE SAYING</h2>
+            <hr>
+            <br>
+            <img src="Elementos/quotation.png">
+            <q>I appreciate lorem ipsum dolor sit amet, ei sea euripidis philosophia, pri ullum dicit eu, sit in scripta efficendi. Dicunt inimicus. Lorem ipsum dolor sit amet.</q>
+            <br>
+            <br>
+            <p class="author">- Jim P.</p>
+        </div>
+
+        <div class="mySlides">
+            <h2>WHAT OUR CLIENTS ARE SAYING</h2>
+            <hr>
+            <br>
+            <img src="Elementos/quotation.png">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+            <br>
+            <br>
+            <p class="author">- Thomas A. Edison</p>
+        </div>
+    </div>
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <div id="sliderbutton">
+        <button type="button">GET IN TOUCH</button>  
+    </div>
+    <script>
+            var slideIndex = 0;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+    </main>
+    <footer>
+        <p>
+            ©2018 Smart SEO, All rights reserved
+        </p>
+    </footer>
+</body>
+</html>
